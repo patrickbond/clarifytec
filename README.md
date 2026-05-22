@@ -1,2 +1,0 @@
-# clarifytec
-Clarifytec website
