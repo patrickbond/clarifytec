@@ -1,0 +1,414 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarify Technology Ltd | AI Consulting for Executives</title>
+    <style>
+        /* Modern CSS Reset and Variables */
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #2563eb;
+            --accent-color: #38bdf8;
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+            --bg-light: #f1f5f9;
+            --bg-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e3a8a 100%);
+            color: var(--text-light);
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: var(--text-light);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 0.75rem 2rem;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+            color: var(--text-light);
+        }
+
+        /* Sections General */
+        section {
+            background-color: var(--bg-white);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Cards */
+        .card {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .stats h2 {
+            color: var(--text-light);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Form */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info strong {
+            margin-right: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2, .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                display: none; 
+            }
+            
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Clarify<span>Tec</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="padding: 0;">
+            <h1>Empowering Leadership with Artificial Intelligence</h1>
+            <p>We provide exclusive, one-on-one AI consulting and training tailored specifically for Company Directors and C-Suite Executives. Transform your workflow, secure your data, and control AI deployment within your organization.</p>
+            <a href="#contact" class="btn">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <section id="services">
+            <h2 class="section-title">Executive AI Training & Consulting</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Personal Workflow Optimization</h3>
+                    <p>Learn how to integrate AI into your daily executive routine. We train you one-on-one to draft communications, summarize extensive reports, and analyze market trends in seconds, giving you back hours of your week.</p>
+                </div>
+                <div class="card">
+                    <h3>Strategic Implementation</h3>
+                    <p>Understanding AI is only the first step. We guide leaders on how to safely implement AI across their organizations, establish corporate AI usage policies, and control the deployment to maximize ROI without compromising quality.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Privacy & Security</h3>
+                    <p>Wary of handing your proprietary business data over to public clouds? We specialize in consulting on self-hosted, on-premises AI solutions that keep your most sensitive data securely within your own infrastructure.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology">
+            <h2 class="section-title">Understanding the AI Landscape</h2>
+            
+            <div class="grid-2">
+                <div>
+                    <h3>LLMs vs. Cloud-Based Services</h3>
+                    <p><strong>Large Language Models (LLMs)</strong> are the underlying engines (like GPT-4 or Llama 3) that understand and generate human-like text. They are the "brains" of the operation.</p>
+                    <p><strong>Cloud-Based AI Services</strong> are managed platforms where you send your data over the internet to a provider's servers to be processed by an LLM. While convenient, this raises privacy concerns for highly regulated industries.</p>
+                    <p><strong>Self-Hosted Local AI</strong> involves taking an open-weight LLM and running it entirely on your own internal hardware. Your data never leaves your building, guaranteeing 100% privacy and compliance.</p>
+                </div>
+                <div>
+                    <h3>Major Ecosystem Suppliers</h3>
+                    <ul style="list-style-position: inside; padding-left: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>OpenAI (ChatGPT/API):</strong> Industry leader in cloud-based models offering highly capable general reasoning.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Microsoft Azure AI:</strong> Enterprise-grade cloud hosting for OpenAI models with strict compliance boundaries.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Google (Gemini):</strong> Powerful cloud AI deeply integrated with Google Workspace and massive context windows.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Anthropic (Claude):</strong> Cloud-based AI focusing heavily on safety, reduced hallucinations, and nuanced writing.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Meta (Llama 3) & Mistral:</strong> The leaders in open-weight models. These are the models we deploy for clients requiring <strong>secure, locally-hosted AI</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact">
+            <h2 class="section-title">How AI Benefits Different Organizations</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Small Businesses & Startups</h3>
+                    <p><strong>Benefit: Force Multiplication.</strong> Startups can use cloud-based AI to automate customer service, generate marketing copy, and assist in coding. AI acts as a virtual team, allowing small operations to compete with established enterprises without massive headcount.</p>
+                </div>
+                <div class="card">
+                    <h3>Mid-Sized Enterprises</h3>
+                    <p><strong>Benefit: Process Automation & Scaling.</strong> Mid-sized companies leverage AI to bridge silos. From automating HR onboarding documents to predictive inventory management, AI standardizes processes and scales operations smoothly as the company grows.</p>
+                </div>
+                <div class="card">
+                    <h3>Large Corporations & Regulated Sectors</h3>
+                    <p><strong>Benefit: Secure Data Analysis.</strong> For finance, healthcare, or legal sectors, locally-run AI is a game-changer. You can analyze millions of secure internal documents, parse contracts, and run predictive models without ever exposing IP to third-party cloud vendors.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="stats" style="margin-bottom: 0; border-radius: 0;">
+        <div class="container">
+            <h2 style="margin-bottom: 3rem;">The Business Case for AI</h2>
+            <div class="grid-3">
+                <div>
+                    <span class="stat-number">70%</span>
+                    <p>Of C-suite executives believe AI will significantly change how their company creates value.</p>
+                </div>
+                <div>
+                    <span class="stat-number">40%</span>
+                    <p>Average increase in worker productivity when utilizing generative AI for complex tasks.</p>
+                </div>
+                <div>
+                    <span class="stat-number">$4.4T</span>
+                    <p>Estimated annual global economic value added by Generative AI technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Ready to master AI for your business?</h3>
+                    <p style="margin-bottom: 2rem;">Contact Clarify Technology Ltd today to schedule a confidential consultation regarding your organization's AI strategy.</p>
+                    
+                    <p><strong>Address:</strong><br>
+                    Clarify Technology Ltd<br>
+                    15 Vanguard Way<br>
+                    Cardiff, Wales<br>
+                    CF24 5PJ</p>
+                    
+                    <p><strong>Email:</strong> <a href="mailto:patrick@clarifytec.co.uk">patrick@clarifytec.co.uk</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:07582007365">07582007365</a></p>
+                    <p><strong>Web:</strong> <a href="https://clarifytec.co.uk">clarifytec.co.uk</a></p>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('In a live environment, this would send your message to patrick@clarifytec.co.uk');">
+                        <div>
+                            <label for="name" style="display:block; margin-bottom:0.5rem; font-weight:600;">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                        </div>
+                        <div>
+                            <label for="email" style="display:block; margin-bottom:0.5rem; font-weight:600;">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="jane@company.com">
+                        </div>
+                        <div>
+                            <label for="message" style="display:block; margin-bottom:0.5rem; font-weight:600;">How can we help?</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your organization's AI needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container" style="padding: 0;">
+            <p>&copy; 2026 Clarify Technology Ltd. All rights reserved.</p>
+            <p style="font-size: 0.875rem; margin-top: 0.5rem; color: #94a3b8;">Registered in Wales.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
