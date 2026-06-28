@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Definitive Guide to Plasson Products & Pipe Fittings | In Good Nic</title>
+    <meta name="description" content="Discover the ultimate technical breakdown of Plasson products and pipe fittings. We rank the top systems, compare their capabilities, and provide expert installation strategies.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-ink: #0d0f14;
+            --paper: #fafaf8;
+            --accent-blue: #1a56f0;
+            --gold: #c8973a;
+            --green: #1a8a5a;
+            --red: #d63c3c;
+            --border-light: #e6e6e4;
+            --text-muted: #555555;
+        }
+
+        /* Base Resets & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--paper);
+            color: var(--dark-ink);
+            line-height: 1.75;
+            font-size: 1.125rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-ink);
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+        }
+
+        h2 { font-size: 2.25rem; margin-top: 3.5rem; }
+        h3 { font-size: 1.75rem; margin-top: 2.5rem; }
+        h4 { font-size: 1.25rem; }
+
+        p { margin-bottom: 1.5rem; }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+
+        a:hover {
+            color: #103ba8;
+            text-decoration: underline;
+        }
+
+        ul, ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        code, .mono { font-family: 'DM Mono', monospace; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* 1. Breadcrumb */
+        .breadcrumb {
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+            font-family: 'DM Mono', monospace;
+            border-bottom: 1px solid var(--border-light);
+            background-color: var(--paper);
+        }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb span { margin: 0 0.5rem; color: #999; }
+        .breadcrumb .current { color: var(--dark-ink); font-weight: 600; }
+
+        /* 2. Hero Section */
+        .hero {
+            background-color: var(--dark-ink);
+            color: var(--paper);
+            padding: 6rem 0 7rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            color: var(--paper);
+            font-size: 3.75rem;
+            max-width: 850px;
+            position: relative;
+            z-index: 2;
+            letter-spacing: -1px;
+        }
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: #a0aabf;
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--gold);
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hero-svg-wrapper {
+            position: absolute;
+            top: 50%;
+            right: -5%;
+            transform: translateY(-50%);
+            width: 600px;
+            height: 400px;
+            z-index: 1;
+            opacity: 0.85;
+            pointer-events: none;
+        }
+
+        /* 3. Table of Contents */
+        .toc-box {
+            background-color: #ffffff;
+            border: 1px solid var(--border-light);
+            padding: 3rem;
+            margin: 4rem 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(13, 15, 20, 0.03);
+        }
+        .toc-box h3 {
+            margin-top: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 2rem;
+        }
+        .toc-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem 4rem;
+            counter-reset: toc-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .toc-columns li {
+            position: relative;
+            padding-left: 2.5rem;
+            font-size: 1.05rem;
+        }
+        .toc-columns li::before {
+            counter-increment: toc-counter;
+            content: "0" counter(toc-counter) ".";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-family: 'DM Mono', monospace;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        .toc-columns a {
+            color: var(--dark-ink);
+            font-weight: 400;
+        }
+
+        /* 4. Intro & Stat Cards */
+        .stat-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        .stat-card {
+            background-color: var(--dark-ink);
+            padding: 2.5rem;
+            border-radius: 4px;
+            text-align: center;
+            border-top: 4px solid var(--gold);
+        }
+        .stat-card .number {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--paper);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .stat-card .label {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.85rem;
+            color: #a0aabf;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .callout {
+            padding: 2rem 2.5rem;
+            border-radius: 4px;
+            margin: 3rem 0;
+            font-size: 1.1rem;
+        }
+        .callout h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+        }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout.gold {
+            background-color: rgba(200, 151, 58, 0.08);
+            border-left: 4px solid var(--gold);
+        }
+        .callout.gold h4 { color: var(--gold); }
+        .callout.blue {
+            background-color: rgba(26, 86, 240, 0.05);
+            border-left: 4px solid var(--accent-blue);
+        }
+        .callout.blue h4 { color: var(--accent-blue); }
+
+        /* 5. Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 3rem 0;
+            box-shadow: 0 4px 20px rgba(13, 15, 20, 0.03);
+            border-radius: 4px;
+            border: 1px solid var(--border-light);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            font-size: 1.05rem;
+        }
+        th {
+            background-color: var(--dark-ink);
+            color: var(--paper);
+            font-family: 'DM Mono', monospace;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 1.5rem;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        td {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--dark-ink);
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:nth-child(even) { background-color: rgba(13, 15, 20, 0.02); }
+
+        /* 6. Video Embeds */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+            margin: 4rem 0 1rem 0;
+            box-shadow: 0 10px 30px rgba(13, 15, 20, 0.1);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .video-caption {
+            text-align: center;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 4rem;
+        }
+
+        /* 7. Tool Cards */
+        .item-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 3.5rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 24px rgba(13, 15, 20, 0.02);
+            position: relative;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .rank-badge {
+            background-color: var(--dark-ink);
+            color: var(--gold);
+            font-family: 'DM Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+        .item-card h2 {
+            margin: 0;
+            border: none;
+            padding: 0;
+            font-size: 2rem;
+            margin-top: 0 !important;
+        }
+        .badge-best {
+            background-color: rgba(200, 151, 58, 0.1);
+            color: #a87e2f;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(200, 151, 58, 0.3);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin: 2.5rem 0;
+            background-color: var(--paper);
+            padding: 2rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-light);
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 1rem;
+        }
+        .feature-item svg {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            fill: var(--accent-blue);
+            margin-top: 2px;
+        }
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        .block-pros {
+            background-color: rgba(26, 138, 90, 0.05);
+            border-top: 4px solid var(--green);
+            padding: 2rem;
+            border-radius: 0 0 4px 4px;
+        }
+        .block-cons {
+            background-color: rgba(214, 60, 60, 0.05);
+            border-top: 4px solid var(--red);
+            padding: 2rem;
+            border-radius: 0 0 4px 4px;
+        }
+        .block-pros h4 { color: var(--green); font-family: 'DM Sans', sans-serif; text-transform: uppercase; font-size: 0.95rem; letter-spacing: 1px;}
+        .block-cons h4 { color: var(--red); font-family: 'DM Sans', sans-serif; text-transform: uppercase; font-size: 0.95rem; letter-spacing: 1px;}
+        .block-pros ul, .block-cons ul { list-style: none; padding: 0; margin: 0; }
+        .block-pros li, .block-cons li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+        .block-pros li::before {
+            content: "+";
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .block-cons li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            color: var(--red);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .pull-quote {
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2.5rem;
+            background-color: #fffcf5;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 3rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .pricing-pill {
+            display: inline-block;
+            background-color: var(--dark-ink);
+            color: var(--paper);
+            font-family: 'DM Mono', monospace;
+            padding: 0.85rem 1.75rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        /* 9. Strategy Guide Section */
+        .strategy-block {
+            background-color: var(--dark-ink);
+            color: var(--paper);
+            padding: 6rem 0;
+            margin: 5rem 0;
+            border-radius: 8px;
+        }
+        .strategy-block h2 {
+            color: var(--paper);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 1rem;
+            margin-top: 0;
+        }
+        .phase-list {
+            display: grid;
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+        .phase-item {
+            background-color: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            padding: 2.5rem;
+            display: flex;
+            gap: 2.5rem;
+        }
+        .phase-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: var(--accent-blue);
+            line-height: 0.8;
+            opacity: 0.9;
+        }
+        .phase-text h3 {
+            color: var(--gold);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .phase-text p {
+            color: #a0aabf;
+            margin-bottom: 0;
+        }
+
+        /* 11. FAQ Section */
+        .faq-wrapper { margin: 6rem 0; }
+        details {
+            background-color: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        details[open] { border-color: var(--accent-blue); box-shadow: 0 4px 12px rgba(26, 86, 240, 0.05); }
+        summary {
+            padding: 1.5rem 2rem;
+            font-weight: 700;
+            font-size: 1.15rem;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 4rem;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: "+";
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'DM Mono', monospace;
+            font-size: 1.75rem;
+            color: var(--accent-blue);
+            font-weight: 400;
+        }
+        details[open] summary::after { content: "-"; }
+        .faq-body {
+            padding: 0 2rem 2rem 2rem;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* 12. CTA Block */
+        .cta-container {
+            background: linear-gradient(135deg, var(--accent-blue) 0%, #103ba8 100%);
+            padding: 5rem 3rem;
+            border-radius: 8px;
+            text-align: center;
+            color: var(--paper);
+            margin: 6rem 0;
+            box-shadow: 0 20px 40px rgba(26, 86, 240, 0.2);
+        }
+        .cta-container h2 {
+            color: var(--paper);
+            margin-top: 0;
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .cta-container p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 650px;
+            margin: 0 auto 3rem auto;
+        }
+        .btn-gold {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--dark-ink);
+            padding: 1.25rem 3rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(200, 151, 58, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(200, 151, 58, 0.6);
+            text-decoration: none;
+            color: var(--dark-ink);
+        }
+
+        /* 13. Related Posts */
+        .related-section { margin-top: 5rem; padding-top: 4rem; border-top: 1px solid var(--border-light); }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        .related-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            padding: 2.5rem;
+            transition: box-shadow 0.2s ease;
+        }
+        .related-card:hover { box-shadow: 0 10px 30px rgba(13, 15, 20, 0.05); }
+        .related-card h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+        .related-card a {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 3rem; }
+            .hero-svg-wrapper { display: none; }
+            .toc-columns, .stat-container, .feature-grid, .pros-cons, .related-grid {
+                grid-template-columns: 1fr;
+            }
+            .phase-item { flex-direction: column; gap: 1.5rem; }
+            .card-header { flex-direction: column; align-items: flex-start; }
+            .table-responsive { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="https://ingoodnic.uk/">Home</a> <span>/</span> 
+            <a href="https://ingoodnic.uk/blog/">Engineering & Tech</a> <span>/</span> 
+            <span class="current">Plasson Products & Fittings</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container relative">
+            <h1>The Definitive Guide to Plasson Products & Pipe Fittings</h1>
+            <p class="subtitle">An uncompromising technical breakdown of the world’s leading high-density polyethylene (HDPE) connection systems. Discover why municipal and industrial engineers rely on Plasson for zero-leak infrastructure.</p>
+            <div class="hero-meta">
+                <span>By Senior Content Strategist</span>
+                <span>•</span>
+                <span>Updated: June 2026</span>
+                <span>•</span>
+                <span>15 Min Read</span>
+            </div>
+            
+            <div class="hero-svg-wrapper">
+                <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="pipeGradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#1a56f0"/>
+                            <stop offset="100%" stop-color="#0a2a7a"/>
+                        </linearGradient>
+                        <linearGradient id="fittingGradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#2a2e38"/>
+                            <stop offset="100%" stop-color="#0d0f14"/>
+                        </linearGradient>
+                    </defs>
+                    
+                    <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1.5">
+                        <path d="M0,50 H800 M0,150 H800 M0,250 H800 M0,350 H800 M0,450 H800" />
+                        <path d="M100,0 V500 M200,0 V500 M300,0 V500 M400,0 V500 M500,0 V500 M600,0 V500 M700,0 V500" />
+                    </g>
+                    
+                    <rect x="50" y="200" width="250" height="100" fill="url(#pipeGradient)" rx="4"/>
+                    <rect x="500" y="200" width="250" height="100" fill="url(#pipeGradient)" rx="4"/>
+                    
+                    <rect x="280" y="160" width="240" height="180" fill="url(#fittingGradient)" stroke="#c8973a" stroke-width="3" rx="8"/>
+                    
+                    <rect x="310" y="210" width="15" height="80" fill="#1a8a5a" rx="2"/> <circle cx="345" cy="250" r="15" fill="#d63c3c" /> <rect x="475" y="210" width="15" height="80" fill="#1a8a5a" rx="2"/> <circle cx="440" cy="250" r="15" fill="#d63c3c" /> <g font-family="monospace" font-size="14" fill="#fafaf8">
+                        <polyline points="345,235 345,110 400,110" fill="none" stroke="#c8973a" stroke-width="2" stroke-dasharray="4,4"/>
+                        <text x="410" y="115" fill="#c8973a">CAPTIVE NBR O-RING</text>
+                        
+                        <polyline points="310,290 310,380 230,380" fill="none" stroke="#1a8a5a" stroke-width="2" stroke-dasharray="4,4"/>
+                        <text x="50" y="385" fill="#1a8a5a">SPLIT ACETAL GRIP RING</text>
+                        
+                        <polyline points="150,200 150,140 200,140" fill="none" stroke="#1a56f0" stroke-width="2" />
+                        <text x="210" y="145" fill="#1a56f0">HDPE/MDPE PIPE</text>
+                        
+                        <text x="340" y="255" font-size="18" fill="#ffffff" font-weight="bold">PN16</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <nav class="toc-box">
+            <h3>Table of Contents</h3>
+            <ol class="toc-columns">
+                <li><a href="#introduction">The Zero-Leak Mandate</a></li>
+                <li><a href="#educational-foundation">What Are Plasson Fittings & Why Do They Matter?</a></li>
+                <li><a href="#video-1">Video: Mechanical Principles in Action</a></li>
+                <li><a href="#top-10">Top 10 Plasson Products Ranked</a></li>
+                <li><a href="#video-2">Video: Electrofusion Masterclass</a></li>
+                <li><a href="#strategy-guide">Phased Installation Strategy</a></li>
+                <li><a href="#comparison-table">Full Systems Comparison Table</a></li>
+                <li><a href="#faq">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
+
+        <section id="introduction">
+            <p>Water distribution infrastructure is fundamentally unforgiving. A single compromised joint in a buried municipal main or a pressurized geothermal loop doesn't just result in a minor leak; it triggers localized sinkholes, catastrophic pressure loss, and staggering excavation repair costs. For decades, civil engineers and plumbers accepted a baseline percentage of failure when relying on traditional brass compression joints or glued PVC. That era is over.</p>
+            
+            <p>Today, ensuring a 50-year zero-leak design life requires uncompromising material science. This is where <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">Plasson Products</a> dominate. As the global pioneer in high-density polyethylene (HDPE) connection systems, Plasson has engineered out the structural vulnerabilities inherent in traditional pipe jointing. Whether you are navigating aggressive subsoil environments, high-vibration commercial wastewater systems, or standard domestic mains, civil contractors require a <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">supply of Plasson Fittings</a> to deliver PN16-rated performance under the most punishing conditions.</p>
+            
+            <p>This article strips away the marketing fluff. We are dissecting the Plasson catalogue—from their legendary Line 7 mechanical fittings to state-of-the-art SmartFuse electrofusion systems—to evaluate exactly what works, what fails if installed improperly, and how to select the precise <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">District Plasson Fittings</a> your infrastructure demands.</p>
+
+            <div class="stat-container">
+                <div class="stat-card">
+                    <span class="number">80+</span>
+                    <span class="label">Countries Supplied</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">PN16</span>
+                    <span class="label">Pressure Rating (Bar)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">50</span>
+                    <span class="label">Year Design Life</span>
+                </div>
+            </div>
+
+            <div class="callout gold">
+                <h4>Contractor Warning</h4>
+                <p>Mixing manufacturers' mechanical fittings with incompatible MDPE/HDPE pipes frequently voids <a href="https://www.wrasapprovals.co.uk/" target="_blank" rel="noopener">WRAS (Water Regulations Advisory Scheme)</a> approvals. Plasson systems are engineered to work as a unified ecosystem. Compromising with cheap, unbranded pipe inserts is a false economy that routinely fails hydrostatic testing.</p>
+            </div>
+        </section>
+
+        <section id="educational-foundation">
+            <h2>What Are Plasson Fittings & Why Do They Matter?</h2>
+            <p>At its core, a Plasson fitting is an engineered mechanical or electro-fusion connector designed specifically for polyethylene pipes (MDPE, HDPE, PE80, PE100). The genius of the Plasson mechanical design lies in the separation of forces. It utilizes a captive O-ring and a split-acetal grip ring. When the nut is tightened, the grip ring physically bites into the pipe wall to handle axial load, while the O-ring is compressed to form an absolutely watertight seal that is completely independent of the grip mechanism.</p>
+            
+            <p>This decoupling of "grip" and "seal" matters immensely. It means the pipe can endure severe thermal expansion, ground heave, or physical bending without the seal ever breaking. By contrast, traditional brass fittings rely on a single metal olive to perform both tasks—a methodology that inevitably degrades under ground vibration and soil acidity.</p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Performance Metric</th>
+                            <th>Traditional Brass/Copper Fittings (Old Approach)</th>
+                            <th>Plasson HDPE Engineered Fittings (New Approach)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Seal Mechanism</strong></td>
+                            <td>Compression olive (combined grip & seal)</td>
+                            <td>Captive NBR O-ring (independent seal)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Corrosion Resistance</strong></td>
+                            <td>Degrades in acidic soils (dezincification)</td>
+                            <td>100% immune to galvanic and soil corrosion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vibration Tolerance</strong></td>
+                            <td>Low - prone to loosening over time</td>
+                            <td>Extreme - acetal ring absorbs movement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Installation Speed</strong></td>
+                            <td>Slow, requires heavy tooling & PTFE tape</td>
+                            <td>Rapid push-fit, hand-tighten (up to 32mm)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pipe Pull-Out Resistance</strong></td>
+                            <td>Moderate, fails under heavy ground shift</td>
+                            <td>Exceeds the yield strength of the PE pipe itself</td>
+                        </tr>
+                        <tr>
+                            <td><strong>System Weight</strong></td>
+                            <td>Heavy, incurring high transport & handling costs</td>
+                            <td>Lightweight precision polymers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p>When reviewing authoritative specifications from the <a href="https://www.bsigroup.com/" target="_blank" rel="noopener">British Standards Institution (BSI)</a>, it becomes immediately evident why modern water authorities explicitly mandate Plasson-style polymer connections for underground potable water infrastructure.</p>
+        </section>
+
+        <section id="video-1">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Q4X-3v_V1z8" title="Plasson Mechanical Fittings Installation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">Demonstration of Plasson's mechanical compression mechanism. Observe how the captive O-ring secures the seal before the nut is fully torqued.</p>
+        </section>
+
+        <section id="top-10">
+            <h2>The Top 10 Plasson Products: Ranked & Reviewed</h2>
+            <p>Not all fittings serve the same purpose. Below is our rigorous ranking of the most critical Plasson components you need in your infrastructure arsenal, curated by our <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">Specialists in fittings for Pipes</a>.</p>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">01</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Plasson Line 7 Mechanical Compression</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Universal MDPE Connections ★</div>
+                <p>The undisputed king of the trench. Plasson's Line 7 compression fittings are the global industry standard for joining MDPE/HDPE pipes up to 63mm. Utilizing the classic captive O-ring and split-ring technology, they provide instantaneous, foolproof seals for potable water lines.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>PN16 Pressure Rating (16 Bar)</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>WRAS Approved for potable water</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Pre-assembled, ready to use design</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>High impact polypropylene body</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Acetal split grip ring</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Sizes ranging from 16mm to 125mm</span>
+                    </div>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Can be installed in wet, muddy trenches without issue.</li>
+                            <li>Does not require specialist electrofusion welding equipment.</li>
+                            <li>Easily dismantled and reused if the pipe layout requires changes.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Bulky external profile makes them difficult to use in highly confined indoor manifold spaces.</li>
+                            <li>Diameters above 63mm require heavy-duty Plasson wrenches to torque correctly.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>Line 7 ranks first because of its sheer reliability and accessibility. It democratizes high-performance piping—allowing both tier-one civil contractors and local plumbers to achieve a guaranteed 16-bar seal with zero specialized training.</p>
+                </div>
+
+                <div class="pull-quote">
+                    "Line 7 fittings are the duct tape of the civil engineering world. If you have MDPE to join underground, this is the only fitting that guarantees you won't be digging it up next year."
+                </div>
+                
+                <div class="pricing-pill">Starting at £4.50 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">02</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Plasson Series 1 Push-Fit</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Rapid Residential Installations ★</div>
+                <p>Series 1 represents Plasson's evolution into urban and domestic plumbing. Stripping away the bulky nut of the Line 7, the Series 1 is a dedicated push-fit system. You simply chamfer the pipe, push it past the internal grip ring, and the seal is instantly secured.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Zero-tool push-fit assembly</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Compact, low-profile design</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Visual connection indicator</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Compatible with PE and PB pipes</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Tamper-resistant permanent seal</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Full PN16 pressure rating</span>
+                    </div>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Slashes labor time by 50% compared to traditional compression nuts.</li>
+                            <li>Perfect for tight manifold boxes and under-sink domestic applications.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Cannot be easily disassembled once the pipe is pushed home (requires a special release tool).</li>
+                            <li>Pipe must be perfectly chamfered to avoid cutting the internal O-ring on insertion.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>When dealing with high-density housing projects, labor time is the largest cost variable. Series 1 trades reusability for unprecedented installation speed without sacrificing the 16-bar pressure rating.</p>
+                </div>
+
+                <div class="pull-quote">
+                    "Series 1 changed our entire workflow. We rough-in residential meter boxes in half the time, and the low profile means we aren't fighting for space."
+                </div>
+                
+                <div class="pricing-pill">Starting at £5.20 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">03</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Plasson Electrofusion Couplers</a></h2>
+                </div>
+                <div class="badge-best">★ Best for High-Volume Mainlines ★</div>
+                <p>When dealing with pipe diameters over 90mm or high-pressure gas distribution, mechanical grips are replaced by molecular bonding. Plasson Electrofusion couplers contain embedded heating coils. When hooked to a control box, they melt the pipe and fitting together into a single, monolithic structure.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Creates a monolithic bonded joint</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>SmartFuse barcode recognition system</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Large diameter capabilities (up to 900mm+)</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Approved for potable water and natural gas</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Exposed wire technology for rapid heat transfer</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Totally immune to pipe pull-out</span>
+                    </div>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>The strongest possible connection method—the pipe will burst before the joint fails.</li>
+                            <li>Automated welding parameters via barcode scanner eliminate human error in heating times.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Requires rigorous pipe preparation (scraping oxidation layer, cleaning with alcohol).</li>
+                            <li>High capital cost for the required electrofusion control box.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>Electrofusion is the gold standard for <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">Pipe Fittings</a> in municipal infrastructure. When you are burying a 250mm main beneath a highway, you cannot rely on a mechanical thread. You need a permanent weld.</p>
+                </div>
+
+                <div class="pull-quote">
+                    "Electrofusion isn't just joining two pipes; it's creating one continuous pipe. Once it cools, the joint effectively ceases to exist."
+                </div>
+                
+                <div class="pricing-pill">Starting at £12.00 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">04</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Plasson SmartFuse Control Box</a></h2>
+                </div>
+                <div class="badge-best">★ Best for QA/QC Data Logging ★</div>
+                <p>The brain behind the brawn. The SmartFuse control box provides the exact voltage and timing required to weld Plasson Electrofusion fittings. It reads the barcode on the fitting, automatically adjusts for ambient temperature, and logs every single weld for quality assurance handovers.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Automated barcode scanner</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Ambient temperature compensation</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Bluetooth data export for QC reports</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Ruggedized job-site casing</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>GPS location tagging of welds</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Multi-voltage input compatibility</span>
+                    </div>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Generates a completely verifiable audit trail for utility inspectors.</li>
+                            <li>Removes guesswork; the machine dictates the exact cooling time before clamps can be removed.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Significant upfront capital investment required for contractors.</li>
+                            <li>Requires regular factory calibration to maintain certification status.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>Modern infrastructure requires data. Water authorities won't sign off on a new estate's pipework without proof of correct welding. SmartFuse provides a bulletproof digital paper trail.</p>
+                </div>
+
+                <div class="pull-quote">
+                    "It's not just a welding machine; it's an auditor. When the inspector asks for proof, you just hand them the SmartFuse data log."
+                </div>
+                
+                <div class="pricing-pill">Starting at £1,400.00 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">05</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">PlasShield Barrier Conversion Kits</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Brownfield Site Integration ★</div>
+                <p>When running pipes through contaminated soil (brownfield sites), standard MDPE must be replaced with multi-layer Barrier Pipe (featuring an aluminum core). PlasShield inserts modify standard Plasson Line 7 fittings to safely grip and seal barrier pipes without exposing the metallic core to water.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Protects aluminum core from corrosion</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Fits standard Line 7 bodies</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>WIS 4-32-11 Approved</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Type A & Type B pipe compatible</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Instant mechanical seal</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Eliminates need for gunmetal fittings</span>
+                    </div>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Drastically reduces inventory costs; you don't need a separate line of barrier fittings, just the inserts.</li>
+                            <li>Vastly cheaper and lighter than traditional brass/gunmetal barrier alternatives.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Requires careful attention to ensure you have the correct Type A or Type B insert for the specific pipe brand being used.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>PlasShield is an inventory hack for contractors. By turning standard inventory into highly specialized brownfield fittings with a simple plastic insert, it maximizes project profitability while maintaining regulatory compliance.</p>
+                </div>
+
+                <div class="pull-quote">
+                    "PlasShield solved the biggest headache of contaminated ground installations. We use our existing stock and just pop in the insert. Brilliant engineering."
+                </div>
+                
+                <div class="pricing-pill">Starting at £3.50 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">06</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Universal Slip Repair Coupler</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Emergency Pipe Bursts ★</div>
+                <p>When an excavator strikes a mainline, you cannot physically pull the pipes apart to slide a standard fitting over them. The Slip Repair Coupler features no central internal stop, allowing it to slide completely over one pipe, align, and slide back across the break.</p>
+                <div class="feature-grid">
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>No central stop register</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Bridges different pipe materials</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Massive time savings on repairs</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Extra long body for damaged sections</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>16 Bar pressure rating</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Available in large diameters</span></div>
+                </div>
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Fixes rigid pipe breaks where lateral movement is physically impossible.</li>
+                            <li>Saves hours of additional trench excavation.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Must accurately mark pipe depth with a pen to ensure the fitting is perfectly centered over the break before tightening.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>It is the ultimate emergency response tool. Every water utility van in the country keeps these stocked to turn major disasters into 20-minute fixes.</p>
+                </div>
+                <div class="pull-quote">"If you've ever stood in a flooded trench trying to bend a 63mm pipe to fit a standard coupler, you'll understand why the slip coupler is an absolute lifesaver."</div>
+                <div class="pricing-pill">Starting at £28.00 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">07</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Threaded Outlet Saddles (Plassaddle)</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Live Line Tapping ★</div>
+                <p>Need to add a new property connection to an active water main without shutting down the street? The Plassaddle clamps securely onto the outside of the main pipe, allowing you to drill through and branch off while maintaining structural integrity.</p>
+                <div class="feature-grid">
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Heavy duty NBR saddle gasket</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Stainless steel reinforcing rings</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Available in metric and imperial</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Prevents pipe deformation</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>High-grade polymer bolts</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Compatible with under-pressure drills</span></div>
+                </div>
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Allows for network expansion without cutting the mainline or halting municipal supply.</li>
+                            <li>Incredibly robust bolted design ensures the O-ring never shifts under pressure.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Requires specific tapping tools for live-pressure under-pressure drilling.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>It's the safest way to branch a pressurized system. The broad surface area of the saddle distributes the mechanical load, ensuring the main pipe isn't crushed by the tap.</p>
+                </div>
+                <div class="pull-quote">"The Plassaddle turns complex network branching into a simple, bolt-on procedure."</div>
+                <div class="pricing-pill">Starting at £14.00 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">08</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Flex Restraints (Axial Restriction)</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Thermal Movement Control ★</div>
+                <p>Polyethylene pipes expand and contract massively with temperature changes. Plasson Flex Restraints are fused onto the pipe to anchor it securely within concrete thrust blocks or wall penetrations, forcing the expansion to occur elsewhere in the system.</p>
+                <div class="feature-grid">
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Electrofusion bonding mechanism</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Distributes massive axial shear load</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Essential for above-ground setups</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Replaces complex puddle flanges</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Zero impact on pipe bore size</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Rapid installation</span></div>
+                </div>
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Protects delicate pump and valve manifolds from being ripped apart by contracting pipes in winter.</li>
+                            <li>Easier to install than traditional mechanical thrust flanges.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Must be precisely positioned before fusion, as they cannot be moved once welded.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>Physics dictates that a 100m length of HDPE will contract significantly in freezing weather. Flex restraints are the only engineered way to anchor that kinetic energy safely without stressing your hardware.</p>
+                </div>
+                <div class="pull-quote">"If you don't control the thermal movement of HDPE, it will control you—usually by snapping your expensive pump manifolds."</div>
+                <div class="pricing-pill">Starting at £35.00 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">09</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">Wastewater System Fittings (LightFB)</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Gravity Drainage Systems ★</div>
+                <p>Not every pipe carries 16 bar of pressure. For unpressurized gravity wastewater, Plasson offers specialized, lightweight fusion and mechanical fittings that provide chemical resistance to sewage without the over-engineering and cost of pressure mains.</p>
+                <div class="feature-grid">
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Optimized for low pressure gravity</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Extreme chemical resistance to effluent</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Large bore for solid passage</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Cost-effective material volume</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Prevents root intrusion</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Compatible with corrugated pipes</span></div>
+                </div>
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Massively reduces material costs for sewer runs compared to using pressure fittings.</li>
+                            <li>Smooth internal bore prevents blockages and fat-berg accumulation.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Strictly forbidden for use on pressurized potable water lines.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>It brings Plasson's legendary leak-proof reputation to the dirty world of wastewater, solving the chronic issue of root intrusion commonly found in old clay or PVC sewer pipes.</p>
+                </div>
+                <div class="pull-quote">"Roots seek water. Plasson wastewater joints are completely fused or mechanically locked, meaning roots have absolutely zero entry points into your sewer network."</div>
+                <div class="pricing-pill">Starting at £18.00 / unit</div>
+            </article>
+
+            <article class="item-card">
+                <div class="card-header">
+                    <div class="rank-badge">10</div>
+                    <h2><a href="https://flowsolutions.plasson.com/products-catalogue/" target="_blank" rel="noopener">SilverLine Compression Fittings</a></h2>
+                </div>
+                <div class="badge-best">★ Best for Agricultural & Irrigation ★</div>
+                <p>Designed specifically for the agricultural sector, SilverLine provides the core Plasson mechanical grip technology in a slightly lighter build. It is rated for the lower pressures (PN10) typical of farm irrigation and aquafarming setups, offering massive savings at scale.</p>
+                <div class="feature-grid">
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>PN10 Pressure Rating (10 Bar)</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>UV stabilized for above-ground exposure</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Highly economical for large projects</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Rapid field deployment</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Corrosion resistant</span></div>
+                    <div class="feature-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Interchangeable parts</span></div>
+                </div>
+                <div class="pros-cons">
+                    <div class="block-pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Perfect price-to-performance ratio for laying kilometers of farm irrigation piping.</li>
+                            <li>Highly resistant to agricultural chemicals and liquid fertilizers.</li>
+                        </ul>
+                    </div>
+                    <div class="block-cons">
+                        <h4>Limitations</h4>
+                        <ul>
+                            <li>Not suitable for 16-bar municipal mains or critical indoor plumbing.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout blue">
+                    <h4>Why It Wins</h4>
+                    <p>Farms run on tight margins. SilverLine gives agricultural contractors access to premium Plasson engineering without paying a premium for unnecessary municipal pressure ratings.</p>
+                </div>
+                <div class="pull-quote">"For drip-feed irrigation loops across hundreds of acres, SilverLine is the most reliable, cost-effective connection on the market."</div>
+                <div class="pricing-pill">Starting at £2.80 / unit</div>
+            </article>
+        </section>
+
+        <section id="video-2">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/5H-7uR8tTFM" title="Plasson Electrofusion Welding Masterclass" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">A complete masterclass on preparing and executing an electrofusion weld. Notice the strict requirement for mechanical pipe scraping prior to using the SmartFuse box.</p>
+        </section>
+
+        <section id="strategy-guide" class="strategy-block">
+            <div class="container">
+                <h2>The Plasson Deployment Strategy</h2>
+                <p>Procuring a <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener" style="color: var(--gold);">supply of Plasson Fittings</a> is only step one. Correct deployment defines the lifespan of the infrastructure. Follow this phased architectural approach to ensure flawless execution.</p>
+                
+                <div class="phase-list">
+                    <div class="phase-item">
+                        <div class="phase-num">01</div>
+                        <div class="phase-text">
+                            <h3>Ecosystem Selection & Flow Analysis</h3>
+                            <p>Determine the environmental parameters. If you are routing potable water through a brownfield industrial site, you must specify Barrier Pipe alongside PlasShield conversion inserts. For high-rise boosting mains over 90mm, standard mechanical fittings are disqualified; you must spec Electrofusion couplers and SmartFuse controllers to handle the dynamic hammer pressure.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="phase-item">
+                        <div class="phase-num">02</div>
+                        <div class="phase-text">
+                            <h3>Trench Preparation & Pipe Handling</h3>
+                            <p>HDPE is tough, but not invincible. Trenches must be blinded with pea shingle or sharp sand to prevent point-loading. Never drag PE pipes across asphalt, as deep gouges compromise the pressure rating. When cutting the pipe, use dedicated rotary cutters to ensure a perfectly square edge. A hacksaw leaves jagged edges that will shred the internal O-rings of Plasson Line 7 fittings upon insertion.</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-num">03</div>
+                        <div class="phase-text">
+                            <h3>The Jointing Protocol</h3>
+                            <p>For mechanical (Line 7): Chamfer the pipe edge, mark the insertion depth, push past the grip ring, and hand-tighten the nut (use Plasson wrenches for diameters >32mm). For Electrofusion: Scrape the oxidation layer off the pipe end (crucial—wiping is not enough), clean with 90% isopropyl alcohol wipes, clamp securely, and scan the barcode to initiate the automated weld.</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-num">04</div>
+                        <div class="phase-text">
+                            <h3>Hydrostatic Testing & Sign-off</h3>
+                            <p>Before backfilling the trench, cap the network and execute a hydrostatic pressure test (typically 1.5x the operating pressure, left for 1 hour). A properly assembled Plasson network will show absolute zero pressure drop. Once verified, backfill the trench incorporating metallic tracer wire directly above the pipe for future utility detection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison-table">
+            <h2>Full Systems Comparison Table</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Best Application</th>
+                            <th>Key Feature</th>
+                            <th>Ease of Use</th>
+                            <th>Contractor Friendly</th>
+                            <th>Price Tier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Line 7 Compression</strong></td>
+                            <td>General MDPE Trenching</td>
+                            <td>Captive O-Ring Seal</td>
+                            <td>★★★★★</td>
+                            <td>Yes - Universal Standard</td>
+                            <td>££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Series 1 Push-Fit</strong></td>
+                            <td>Tight Manifolds / Housing</td>
+                            <td>Zero-Tool Assembly</td>
+                            <td>★★★★★</td>
+                            <td>Yes - Max Time Savings</td>
+                            <td>££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Electrofusion Couplers</strong></td>
+                            <td>Mains > 90mm & Gas</td>
+                            <td>Monolithic Bonding</td>
+                            <td>★★☆☆☆</td>
+                            <td>Requires Certification</td>
+                            <td>£££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SmartFuse Box</strong></td>
+                            <td>Utility Data Logging</td>
+                            <td>Automated Barcode QA</td>
+                            <td>★★★★☆</td>
+                            <td>Yes - Foolproof Welding</td>
+                            <td>£££££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PlasShield Barrier</strong></td>
+                            <td>Contaminated Land</td>
+                            <td>Aluminum Core Protection</td>
+                            <td>★★★★★</td>
+                            <td>Yes - Inventory Hack</td>
+                            <td>£</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Slip Repair Coupler</strong></td>
+                            <td>Emergency Pipe Strikes</td>
+                            <td>No Central Stop</td>
+                            <td>★★★★☆</td>
+                            <td>Yes - Fixes Rigid Breaks</td>
+                            <td>£££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Threaded Saddles</strong></td>
+                            <td>Live Network Branching</td>
+                            <td>Heavy-Duty Clamping</td>
+                            <td>★★★☆☆</td>
+                            <td>Needs Tapping Tools</td>
+                            <td>££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Flex Restraints</strong></td>
+                            <td>Thermal Expansion Control</td>
+                            <td>Axial Shear Anchoring</td>
+                            <td>★★★☆☆</td>
+                            <td>Requires Fusion Box</td>
+                            <td>£££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wastewater Fittings</strong></td>
+                            <td>Gravity Sewers</td>
+                            <td>Chemical Resistance</td>
+                            <td>★★★★☆</td>
+                            <td>Yes - Prevents Roots</td>
+                            <td>££</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SilverLine</strong></td>
+                            <td>Farm Irrigation (PN10)</td>
+                            <td>High Volume Economy</td>
+                            <td>★★★★★</td>
+                            <td>Yes - Cost Effective</td>
+                            <td>£</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-wrapper">
+            <h2>Frequently Asked Questions</h2>
+            
+            <details>
+                <summary>How do I know if I need mechanical or electrofusion fittings?</summary>
+                <div class="faq-body">
+                    For pipe diameters up to 63mm, mechanical compression fittings (like Plasson Line 7) are standard because they are fast, require no electricity, and easily handle the PN16 pressure ratings for domestic and light commercial supplies. However, once you exceed 90mm in diameter, the physical force required to torque a mechanical nut becomes prohibitive, and the potential for ground-shift damage increases. For large mains, or any high-pressure gas lines, electrofusion is the mandatory standard to ensure structural safety. Consult our <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">Specialists in fittings for Pipes</a> if you are unsure.
+                </div>
+            </details>
+
+            <details>
+                <summary>What's the difference between MDPE, HDPE, and PE100?</summary>
+                <div class="faq-body">
+                    MDPE (Medium Density Polyethylene) is the slightly softer, highly flexible blue or yellow pipe commonly used for house service connections (usually PE80 grade). HDPE (High Density Polyethylene, specifically PE100) is harder, more rigid, and used for high-pressure municipal mains. Plasson <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener">Pipe Fittings</a> are universally engineered to clamp onto and fuse with both PE80 and PE100 materials, adapting seamlessly across both densities.
+                </div>
+            </details>
+
+            <details>
+                <summary>Is it necessary to chamfer the pipe before inserting it into a Plasson fitting?</summary>
+                <div class="faq-body">
+                    Yes, absolutely. If you cut an MDPE pipe with a hacksaw or rotary cutter, the edge is square and sharp. If you force that square edge directly into a Plasson Series 1 or Line 7 fitting, it will often push the O-ring out of its seat or slice the rubber, leading to a slow, microscopic leak. Chamfering puts a 15-degree bevel on the pipe edge, allowing it to glide safely through the O-ring seal without causing damage.
+                </div>
+            </details>
+
+            <details>
+                <summary>Can I reuse Plasson mechanical fittings?</summary>
+                <div class="faq-body">
+                    Yes, Line 7 mechanical compression fittings are designed to be reusable. If you need to reroute a pipe, you can unscrew the nut, pull the pipe out, and reuse the main body and O-ring. However, best practice dictates that you should always replace the white split acetal grip-ring, as its teeth may have been permanently deformed or blunted by its initial bite into the pipe wall. Series 1 push-fit fittings are generally considered permanent unless extracted with a specialist release key.
+                </div>
+            </details>
+
+            <details>
+                <summary>Why is my electrofusion joint failing the pressure test?</summary>
+                <div class="faq-body">
+                    99% of electrofusion failures are due to poor pipe preparation. PE pipes develop an invisible layer of oxidation when exposed to UV light and air. If you do not physically scrape this microscopic layer off the pipe end (using a mechanical peeler, not sandpaper) before welding, the melting plastic will not cross-link molecularly. The fitting will appear joined, but will blow out under hydrostatic pressure. You must also ensure the scraped area is wiped with specialized alcohol to remove finger grease.
+                </div>
+            </details>
+
+            <details>
+                <summary>How do I connect barrier pipe through contaminated ground?</summary>
+                <div class="faq-body">
+                    Standard MDPE and standard inserts are strictly forbidden in brownfield sites as hydrocarbons permeate the plastic. You must use multi-layer Barrier Pipe (which has an aluminum core). To connect this, you take a standard Plasson Line 7 body and install a Plasson PlasShield conversion kit inside it. This specialized insert grips the pipe whilst hermetically sealing the aluminum edge away from the internal water flow to prevent galvanic corrosion.
+                </div>
+            </details>
+
+            <details>
+                <summary>Are Plasson products WRAS approved for drinking water?</summary>
+                <div class="faq-body">
+                    Yes. The vast majority of Plasson's potable water catalog, including Line 7, Series 1, and standard Electrofusion couplers, carry full WRAS (Water Regulations Advisory Scheme) approval up to 16 bar. This makes them legally compliant for use in public water distribution networks across the United Kingdom and Europe. Always check specific component sheets if dealing with extreme temperatures or aggressive industrial chemicals.
+                </div>
+            </details>
+        </section>
+
+        <section class="cta-container">
+            <h2>Fortify Your Pipeline Infrastructure</h2>
+            <p>Do not compromise your project with substandard connections. Source genuine Plasson engineering, backed by expert technical advice and rapid site delivery.</p>
+            <a href="https://ingoodnic.uk/plasson.html" target="_blank" rel="noopener" class="btn-gold">View Full Plasson Inventory & Pricing</a>
+        </section>
+
+        <section class="related-section">
+            <h2 style="text-align: center; margin-bottom: 0.5rem; border:none;">Expand Your Engineering Knowledge</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h4>The Barrier Pipe Guide for Brownfield Sites</h4>
+                    <a href="#">Read Technical Brief →</a>
+                </div>
+                <div class="related-card">
+                    <h4>Electrofusion vs. Mechanical Jointing Data</h4>
+                    <a href="#">Read Technical Brief →</a>
+                </div>
+                <div class="related-card">
+                    <h4>Navigating UK Water Board Regulations 2026</h4>
+                    <a href="#">Read Technical Brief →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const details = document.querySelectorAll('details');
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener('click', () => {
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

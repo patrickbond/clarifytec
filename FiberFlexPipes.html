@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Definitive Guide to FiberFlex Pipes | In Good Nic</title>
+    <meta name="description" content="Discover everything you need to know about FiberFlex, FiberFlex Pro, and FiberFlex Pro 16. Compare specs, benefits, and why we are the Specialists in FiberFlex Pipes.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+        :root {
+            --dark-ink: #0d0f14;
+            --paper: #fafaf8;
+            --accent-blue: #1a56f0;
+            --gold: #c8973a;
+            --green: #1a8a5a;
+            --red: #d63c3c;
+            --border-light: #e5e5e5;
+            --text-muted: #5a5d66;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--paper);
+            color: var(--dark-ink);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-ink);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #0b3bbd;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumb {
+            padding: 1.5rem 0;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .breadcrumb a {
+            color: var(--text-muted);
+        }
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--dark-ink);
+            color: var(--paper);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+        .hero h1 {
+            color: var(--paper);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+        }
+        .hero-meta {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--gold);
+        }
+        .hero-svg {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500px;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        @media (max-width: 900px) {
+            .hero-svg { display: none; }
+        }
+
+        /* Layout */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 4rem;
+            padding: 4rem 0;
+        }
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+
+        /* Table of Contents */
+        .toc-wrapper {
+            position: sticky;
+            top: 2rem;
+            background: #fff;
+            padding: 2rem;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .toc-wrapper h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            counter-reset: toc-counter;
+        }
+        .toc-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+        .toc-list li::before {
+            counter-increment: toc-counter;
+            content: counter(toc-counter) ".";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-family: 'DM Mono', monospace;
+            font-weight: 500;
+        }
+        .toc-list a {
+            color: var(--dark-ink);
+            font-weight: 400;
+        }
+        .toc-list a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Main Content Styling */
+        .main-content h2 {
+            font-size: 2.25rem;
+            margin-top: 3rem;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Stat Cards */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+        .stat-card {
+            background: var(--dark-ink);
+            color: var(--paper);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .stat-card .label {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 768px) {
+            .stat-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Callouts */
+        .callout {
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+        .callout.gold {
+            background: rgba(200, 151, 58, 0.1);
+            border-left: 4px solid var(--gold);
+        }
+        .callout.blue {
+            background: rgba(26, 86, 240, 0.05);
+            border-left: 4px solid var(--accent-blue);
+        }
+        .callout.green {
+            background: rgba(26, 138, 90, 0.05);
+            border-left: 4px solid var(--green);
+        }
+        .callout h4 {
+            margin-top: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 2.5rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-light);
+        }
+        th {
+            background: var(--dark-ink);
+            color: var(--paper);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Video Embed */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 2.5rem 0 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .video-caption {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Tool Cards */
+        .tool-card {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+            position: relative;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .rank-badge {
+            background: var(--dark-ink);
+            color: var(--gold);
+            font-family: 'DM Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .tool-card h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            border: none;
+            padding: 0;
+        }
+        .best-for {
+            background: rgba(200, 151, 58, 0.15);
+            color: #9e7529;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            background: var(--paper);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .feature-item::before {
+            content: '✓';
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .pros-block {
+            background: rgba(26, 138, 90, 0.05);
+            border-top: 4px solid var(--green);
+            padding: 1.5rem;
+            border-radius: 0 0 8px 8px;
+        }
+        .cons-block {
+            background: rgba(214, 60, 60, 0.05);
+            border-top: 4px solid var(--red);
+            padding: 1.5rem;
+            border-radius: 0 0 8px 8px;
+        }
+        .pros-block h4, .cons-block h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+        .pros-block h4 { color: var(--green); }
+        .cons-block h4 { color: var(--red); }
+        .pros-block ul, .cons-block ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pros-block li, .cons-block li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .pros-block li::before {
+            content: '+';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: bold;
+        }
+        .cons-block li::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            color: var(--red);
+            font-weight: bold;
+        }
+        .pull-quote {
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            border-left: 4px solid var(--gold);
+            padding: 1rem 0 1rem 1.5rem;
+            background: #fffdf5;
+            margin: 2rem 0;
+        }
+        .pricing-pill {
+            display: inline-block;
+            background: var(--dark-ink);
+            color: var(--paper);
+            font-family: 'DM Mono', monospace;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .feature-grid, .pros-cons { grid-template-columns: 1fr; }
+        }
+
+        /* Strategy Guide Section */
+        .strategy-section {
+            background: var(--dark-ink);
+            color: var(--paper);
+            padding: 4rem;
+            border-radius: 12px;
+            margin: 4rem 0;
+        }
+        .strategy-section h2 {
+            color: var(--paper);
+            border-bottom-color: rgba(255,255,255,0.1);
+        }
+        .phase-grid {
+            margin-top: 3rem;
+            display: grid;
+            gap: 2.5rem;
+        }
+        .phase-item {
+            display: flex;
+            gap: 2rem;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .phase-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--accent-blue);
+            line-height: 1;
+            opacity: 0.8;
+        }
+        .phase-content h4 {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+        .phase-content p {
+            margin-bottom: 0;
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            .phase-item { flex-direction: column; gap: 1rem; }
+            .strategy-section { padding: 2rem; }
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: 4rem 0;
+        }
+        details {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        summary {
+            padding: 1.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: '+';
+            color: var(--accent-blue);
+            font-family: 'DM Mono', monospace;
+            font-size: 1.5rem;
+        }
+        details[open] summary::after {
+            content: '-';
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border-light);
+        }
+        .faq-content {
+            padding: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        /* CTA Block */
+        .cta-block {
+            background: linear-gradient(135deg, var(--accent-blue) 0%, #103aab 100%);
+            color: var(--paper);
+            padding: 4rem 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 12px 32px rgba(26, 86, 240, 0.2);
+        }
+        .cta-block h2 {
+            color: var(--paper);
+            border: none;
+            font-size: 2.5rem;
+        }
+        .cta-block p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark-ink);
+            padding: 1.2rem 2.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(200, 151, 58, 0.4);
+            color: var(--dark-ink);
+        }
+
+        /* Related Posts */
+        .related-section {
+            border-top: 1px solid var(--border-light);
+            padding-top: 4rem;
+            margin-top: 4rem;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .related-card {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+        .related-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+        .related-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .related-card a {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="https://ingoodnic.uk">Home</a> <span>/</span>
+            <a href="https://ingoodnic.uk/blog">District Heating Blog</a> <span>/</span>
+            <strong>The Ultimate Guide to FiberFlex Pipes</strong>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Definitive Guide to FiberFlex Pre-Insulated Pipes</h1>
+                <p class="subtitle">An uncompromising breakdown of the aramid-mesh reinforced piping revolutionizing district heating. We expose the thermal performance, cost economics, and installation realities of FiberFlex, Pro, and Pro 16 systems.</p>
+                <div class="hero-meta">
+                    BY IN GOOD NIC ENGINEERING DESK • PUBLISHED JUNE 2026 • 15 MIN READ
+                </div>
+            </div>
+            
+            <svg class="hero-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="purInsulation" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#2a2e35" />
+                        <stop offset="100%" stop-color="#15171a" />
+                    </linearGradient>
+                    <pattern id="aramidMesh" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 20 M 0 0 L 20 20" fill="none" stroke="#c8973a" stroke-width="1.5" stroke-opacity="0.6"/>
+                    </pattern>
+                </defs>
+                <circle cx="250" cy="250" r="220" fill="#0d0f14" stroke="#333" stroke-width="8" />
+                <circle cx="250" cy="250" r="212" fill="none" stroke="#1a1c23" stroke-width="2" />
+                <circle cx="250" cy="250" r="200" fill="url(#purInsulation)" />
+                <circle cx="250" cy="250" r="198" fill="none" stroke="#444" stroke-width="1" stroke-dasharray="4 4" />
+                <circle cx="250" cy="250" r="110" fill="url(#aramidMesh)" />
+                <circle cx="250" cy="250" r="100" fill="#d63c3c" opacity="0.9"/>
+                <circle cx="250" cy="250" r="80" fill="#ff6b6b" />
+                
+                <g font-family="DM Mono" font-size="12" fill="#fafaf8">
+                    <polyline points="250,30 250,10 380,10" fill="none" stroke="#fafaf8" stroke-width="1.5" />
+                    <text x="390" y="14">LDPE OUTER CASING</text>
+                    
+                    <polyline points="380,150 430,150 430,120" fill="none" stroke="#fafaf8" stroke-width="1.5" />
+                    <text x="400" y="110">PUR FOAM (0.021 W/mK)</text>
+                    
+                    <polyline points="330,200 420,200" fill="none" stroke="#c8973a" stroke-width="1.5" />
+                    <text x="430" y="204" fill="#c8973a">ARAMID FIBER MESH</text>
+                    
+                    <polyline points="250,250 150,250 100,250" fill="none" stroke="#fafaf8" stroke-width="1.5" />
+                    <text x="10" y="254">115°C / 16 BAR CORE</text>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <div class="container layout-grid">
+        <aside>
+            <div class="toc-wrapper">
+                <h3>Table of Contents</h3>
+                <ol class="toc-list">
+                    <li><a href="#introduction">The District Heating Dilemma</a></li>
+                    <li><a href="#educational-foundation">Steel vs. Reinforced Plastic</a></li>
+                    <li><a href="#video-1">See FiberFlex in Action</a></li>
+                    <li><a href="#top-systems">The FiberFlex Ecosystem Rated</a></li>
+                    <li><a href="#video-2">Advanced Jointing Mechanics</a></li>
+                    <li><a href="#strategy-guide">Deployment Strategy Guide</a></li>
+                    <li><a href="#comparison-table">Full Technical Comparison</a></li>
+                    <li><a href="#faq">Frequently Asked Questions</a></li>
+                </ol>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="introduction">
+                <p>For decades, the district heating industry has been trapped in a painful compromise. If you needed to transport water above 95°C or at high pressures (10+ bar), you were forced to use rigid steel pipes. Steel meant dealing with slow, expensive welding, massive excavation trenches, rigid elbows, and the ever-present threat of catastrophic underground corrosion. Conversely, traditional flexible PEX pipes solved the installation nightmares but simply melted under high temperatures and pressures.</p>
+                
+                <p>That compromise is officially dead. The introduction of aramid-reinforced piping—specifically the <a href="https://ingoodnic.uk/fully-bonded.html">District FiberFlex Pipes</a> range—has re-written the engineering rulebook. By integrating the same high-tensile aramid fibers used in aerospace and ballistic armor into the wall of a cross-linked polyethylene (PEXa) pipe, manufacturers have achieved the impossible: the flexibility of plastic with the operating properties of KMR steel pipe systems.</p>
+                
+                <p>As <a href="https://ingoodnic.uk/fully-bonded.html">Specialists in FiberFlex Pipes</a>, we see countless consultants specify the wrong system. They either over-engineer with steel out of habit, or specify standard PEX that fails under seasonal peak loads. In this guide, we strip away the marketing jargon. We will brutally assess where standard FiberFlex belongs, when you must upgrade to FiberFlex Pro, and how to execute an installation that guarantees a 50-year maintenance-free lifespan.</p>
+                
+                
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <span class="number">115°C</span>
+                        <span class="label">Max Operating Temp</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number">16 BAR</span>
+                        <span class="label">Peak Pressure Capacity</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number">0.021</span>
+                        <span class="label">W/mK Thermal Cond.</span>
+                    </div>
+                </div>
+
+                <div class="callout gold">
+                    <h4>Contractor Warning</h4>
+                    <p>Do not confuse standard PEX with fiber-reinforced PEX. Attempting to run a 115°C primary heat network through unreinforced plastic will result in rapid pipe ballooning and explosive failure. Always verify you are utilizing authentic <a href="https://ingoodnic.uk/fully-bonded.html">FiberFlex Pro</a> stock for high-temp biomass or geothermal district mains.</p>
+                </div>
+            </section>
+
+            <section id="educational-foundation">
+                <h2>What is FiberFlex and Why Does it Matter?</h2>
+                <p>Understanding FiberFlex requires looking at its cross-section. A standard pre-insulated pipe has three layers: the carrier pipe (usually PEX), the polyurethane (PUR) foam insulation, and the outer LDPE jacket. The limitation of standard PEX is hoop stress; as temperature rises, the plastic softens, and internal pressure causes the pipe to expand radially until it bursts.</p>
+                
+                <p>The FiberFlex innovation lies in the addition of an aramid fiber mesh tightly woven around the PEXa carrier pipe. Aramid (the generic name for Kevlar) has an incredibly high tensile strength-to-weight ratio. When internal pressure tries to expand the softened plastic at 115°C, the aramid mesh locks it in place. Because the mesh provides the structural integrity, the actual plastic pipe wall can be made remarkably thin. A thinner wall means a smaller overall carrier pipe diameter, allowing for *more* PUR insulation in the same size outer casing.</p>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specification</th>
+                                <th>Rigid Steel Pipe (Old Approach)</th>
+                                <th>FiberFlex Pro (New Approach)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Installation Method</strong></td>
+                                <td>Welded joints every 12 meters</td>
+                                <td>Continuous unrolling up to 300m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flexibility & Routing</strong></td>
+                                <td>Zero flexibility, requires rigid elbows</td>
+                                <td>Highly flexible, bends around obstacles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Corrosion Risk</strong></td>
+                                <td>High risk if outer casing is breached</td>
+                                <td>Zero risk (100% polymer/aramid)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Trench Width Required</strong></td>
+                                <td>Wide (requires welding space)</td>
+                                <td>Narrow (sloped trenching only)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Max Temperature/Pressure</strong></td>
+                                <td>140°C+ / 25 Bar</td>
+                                <td>115°C / 16 Bar (Sufficient for 95% of networks)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thermal Expansion Control</strong></td>
+                                <td>Requires complex expansion loops/cushions</td>
+                                <td>Self-compensating in the ground</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="video-1">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/9G63ZJ_j160" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">Notice how flexible reinforced piping is unspooled directly into narrow trenches, eliminating the need for hot-works welding on site.</div>
+            </section>
+
+            <section id="top-systems">
+                <h2>The Complete FiberFlex Ecosystem Rated</h2>
+                <p>Not all projects require a 16-bar pressure rating. Over-specifying ruins your project ROI. Below is our definitive breakdown of the FiberFlex product stack and associated accessories, explaining exactly when and where to deploy them.</p>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#1</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">FiberFlex Pro 16</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Primary High-Temp District Mains ★</div>
+                    <p>The undisputed king of flexible piping. By utilizing a finer-meshed, high-temperature aramid fiber weave, the Pro 16 variant pushes the boundaries of polymer engineering, matching the operating properties of KMR steel systems up to 115°C and an astonishing 16 bar of continuous pressure.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-item">115°C Max continuous temp</div>
+                        <div class="feature-item">16 Bar max operating pressure</div>
+                        <div class="feature-item">Finer-meshed aramid weave</div>
+                        <div class="feature-item">Cyclopentane-blown PUR foam</div>
+                        <div class="feature-item">EVOH oxygen diffusion barrier</div>
+                        <div class="feature-item">Available in single & twin configurations</div>
+                    </div>
+
+                    <div class="pros-cons">
+                        <div class="pros-block">
+                            <h4>The Advantages</h4>
+                            <ul>
+                                <li>Completely eliminates the need for steel in modern 4th generation district heating networks.</li>
+                                <li>Thinner carrier pipe walls allow for significantly thicker insulation, crushing heat loss metrics.</li>
+                                <li>Zero underground corrosion risk translates to lower insurance premiums.</li>
+                            </ul>
+                        </div>
+                        <div class="cons-block">
+                            <h4>The Limitations</h4>
+                            <ul>
+                                <li>Premium pricing; overkill for standard low-temperature secondary networks.</li>
+                                <li>Requires highly specific compression tooling for the reinforced joints.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="callout blue">
+                        <h4>Why It Wins</h4>
+                        <p>FiberFlex Pro 16 represents the apex of thermal piping. It allows designers to completely abandon heavy, slow steel installations for main transmission lines from biomass or deep geothermal plants without sacrificing thermal performance.</p>
+                    </div>
+
+                    <div class="pull-quote">
+                        "When consulting engineers realize they can run 115°C water at 16 bar through a pipe that rolls off a spool, it fundamentally changes how they design city-wide networks."
+                    </div>
+                    
+                    <div class="pricing-pill">Project Specific Pricing</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#2</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">FiberFlex Pro (10 Bar)</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Standard Commercial Heat Networks ★</div>
+                    <p>The sweet spot for the vast majority of medium-scale projects. The standard Pro version maintains the 115°C temperature threshold but utilizes a standard aramid mesh rated for 10 bar. It is the go-to alternative for campus heating, hospitals, and large residential blocks.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-item">115°C Max operating temperature</div>
+                        <div class="feature-item">10 Bar pressure rating</div>
+                        <div class="feature-item">Aramid fiber reinforced</div>
+                        <div class="feature-item">Superior 0.021 W/mK insulation</div>
+                        <div class="feature-item">Exceptional bending radii</div>
+                        <div class="feature-item">Lightweight deployment</div>
+                    </div>
+
+                    <div class="pros-cons">
+                        <div class="pros-block">
+                            <h4>The Advantages</h4>
+                            <ul>
+                                <li>Highly cost-effective alternative to Pro 16 when system pressures don't demand it.</li>
+                                <li>Massive reduction in civil engineering costs due to unspooling speed.</li>
+                            </ul>
+                        </div>
+                        <div class="cons-block">
+                            <h4>The Limitations</h4>
+                            <ul>
+                                <li>Cannot handle extreme topography elevation drops where static pressure exceeds 10 bar.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="callout blue">
+                        <h4>Why It Wins</h4>
+                        <p>It is the workhorse of the <a href="https://ingoodnic.uk/fully-bonded.html">FiberFlex</a> lineup. 90% of district heating networks do not exceed 10 bar. Paying for 16-bar capacity when it isn't required is poor engineering economics.</p>
+                    </div>
+
+                    <div class="pull-quote">
+                        "FiberFlex Pro is our default spec. It provides the high-temperature safety net we need, with the installation economics our clients demand."
+                    </div>
+                    
+                    <div class="pricing-pill">Project Specific Pricing</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#3</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">Standard FiberFlex (10 Bar / 80°C)</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Low-Temp / Heat Pump Networks ★</div>
+                    <p>For modern, 4th and 5th generation heat networks powered by heat pumps, extreme temperatures are a thing of the past. Standard FiberFlex provides aramid-reinforced 10-bar pressure capacity at a continuous 80°C, perfectly optimized for modern low-temp grids.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-item">80°C Continuous operating temp</div>
+                        <div class="feature-item">10 Bar pressure rating</div>
+                        <div class="feature-item">Aramid mesh reinforced</div>
+                        <div class="feature-item">Maximized insulation thickness</div>
+                        <div class="feature-item">Ideal for secondary networks</div>
+                        <div class="feature-item">Highly flexible</div>
+                    </div>
+
+                    <div class="pros-cons">
+                        <div class="pros-block">
+                            <h4>The Advantages</h4>
+                            <ul>
+                                <li>The most cost-efficient reinforced pipe on the market.</li>
+                                <li>Because the carrier wall is so thin, the outer casing is almost entirely filled with PUR foam, resulting in industry-leading minimal heat loss.</li>
+                            </ul>
+                        </div>
+                        <div class="cons-block">
+                            <h4>The Limitations</h4>
+                            <ul>
+                                <li>Strictly unsuitable for older, high-temperature biomass or gas-CHP primary circuits.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="callout blue">
+                        <h4>Why It Wins</h4>
+                        <p>As the UK transitions toward ambient loop and low-temperature heat pump networks, high temperature resistance becomes redundant. Standard FiberFlex provides the pressure security of a reinforced pipe at a highly competitive price point.</p>
+                    </div>
+
+                    <div class="pull-quote">
+                        "Why pay for 115°C resistance when your heat pump outputs 65°C? Standard FiberFlex gives us the 10-bar pressure we need without the high-temp premium."
+                    </div>
+                    
+                    <div class="pricing-pill">Project Specific Pricing</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#4</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">RK Infra Polymer Press Fittings</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Secure Underground Jointing ★</div>
+                    <p>Joining reinforced pipes requires specialized mechanics to grip the aramid mesh. The FiberFlex press fittings feature an additional internal polymer crimp sleeve between the sliding sleeve and the service pipe, guaranteeing a leak-proof mechanical lock under 16-bar stress.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-item">Proprietary polymer crimp sleeve</div>
+                        <div class="feature-item">No pipe widening required</div>
+                        <div class="feature-item">Dezincification resistant brass</div>
+                        <div class="feature-item">Compatible with standard tools (up to 110mm)</div>
+                        <div class="feature-item">Permanent mechanical lock</div>
+                        <div class="feature-item">16-Bar rated</div>
+                    </div>
+
+                    <div class="pros-cons">
+                        <div class="pros-block">
+                            <h4>The Advantages</h4>
+                            <ul>
+                                <li>Because no pipe widening is needed, installation time in the trench is cut by 40%.</li>
+                                <li>The polymer sleeve ensures the aramid fibers are not crushed or sheared by the metal fitting.</li>
+                            </ul>
+                        </div>
+                        <div class="cons-block">
+                            <h4>The Limitations</h4>
+                            <ul>
+                                <li>Requires exact calibration of pressing tools; under-pressing leads to catastrophic failure.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="callout blue">
+                        <h4>Why It Wins</h4>
+                        <p>A piping network is only as strong as its weakest joint. These specialized fittings respect the aramid mesh, ensuring the mechanical joint matches the 50-year lifespan of the pipe itself.</p>
+                    </div>
+
+                    <div class="pull-quote">
+                        "The addition of the polymer crimp sleeve is a stroke of genius. It protects the fibers while providing an impenetrable seal."
+                    </div>
+                    
+                    <div class="pricing-pill">Starting at £45 / fitting</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#5</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">Factory Pre-Insulated Steel Fittings</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Complex Junctions & Valves ★</div>
+                    <p>When transitioning from flexible PEX back to steel, or installing large branching T-pieces, doing insulation work in a muddy trench is risky. RK Infra provides factory pre-insulated steel fittings with FiberFlex press transitions pre-welded on.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-item">Factory-controlled PUR foam</div>
+                        <div class="feature-item">Pre-welded press transitions</div>
+                        <div class="feature-item">100% watertight casing</div>
+                        <div class="feature-item">Massive site-time reduction</div>
+                        <div class="feature-item">Integrated leak detection wires</div>
+                        <div class="feature-item">Custom geometries available</div>
+                    </div>
+
+                    <div class="pros-cons">
+                        <div class="pros-block">
+                            <h4>The Advantages</h4>
+                            <ul>
+                                <li>Eliminates the highly error-prone process of manually foaming large T-junctions on site in bad weather.</li>
+                                <li>Ensures the insulation quality matches the main pipe run perfectly.</li>
+                            </ul>
+                        </div>
+                        <div class="cons-block">
+                            <h4>The Limitations</h4>
+                            <ul>
+                                <li>Requires precise pre-planning and ordering; you cannot easily alter a factory fitting on site.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="callout blue">
+                        <h4>Why It Wins</h4>
+                        <p>Risk mitigation. The majority of district heating failures occur at joints where site-applied insulation failed to keep groundwater out. Factory pre-insulation removes human error from the equation.</p>
+                    </div>
+
+                    <div class="pull-quote">
+                        "We never foam complex junctions on site anymore. Factory pre-insulated fittings drop right in, we press the joints, seal the ends, and we're done."
+                    </div>
+                    
+                    <div class="pricing-pill">Priced on Specification</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#6</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">CLICK System Half-Shells</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Rapid Joint Insulation ★</div>
+                    <p>Insulating straight connections previously required toxic foaming chemicals. The CLICK system provides pre-molded PUR half-shells that literally snap together over the joint.</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">Tool-free CLICK assembly</div>
+                        <div class="feature-item">No liquid foam required</div>
+                        <div class="feature-item">Guaranteed uniform insulation</div>
+                        <div class="feature-item">Watertight mastic seals</div>
+                    </div>
+                    <div class="pros-cons">
+                        <div class="pros-block"><h4>Pros</h4><ul><li>Installs in minutes, unaffected by rain or cold temperatures.</li></ul></div>
+                        <div class="cons-block"><h4>Cons</h4><ul><li>Higher upfront material cost compared to liquid foam kits.</li></ul></div>
+                    </div>
+                    <div class="callout blue"><h4>Why It Wins</h4><p>It removes weather dependency from your installation schedule.</p></div>
+                    <div class="pull-quote">"Snap, seal, and bury. It's foolproof."</div>
+                    <div class="pricing-pill">Starting at £30 / set</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#7</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">RK Infra Large Pressing Tool</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Mains Above 110mm ★</div>
+                    <p>Standard plumbing press tools fail on heavy-duty district mains. This hydraulic beast delivers the exact tonnage required to lock polymer sleeves onto reinforced pipe.</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">High-tonnage hydraulic force</div>
+                        <div class="feature-item">Calibrated for aramid protection</div>
+                        <div class="feature-item">Battery operated mobility</div>
+                        <div class="feature-item">Auto-retract safety</div>
+                    </div>
+                    <div class="pros-cons">
+                        <div class="pros-block"><h4>Pros</h4><ul><li>Guarantees a 16-bar seal every single time.</li></ul></div>
+                        <div class="cons-block"><h4>Cons</h4><ul><li>Heavy and expensive equipment to keep on site.</li></ul></div>
+                    </div>
+                    <div class="callout blue"><h4>Why It Wins</h4><p>You cannot compromise on joint integrity. This tool is mandatory for large-bore FiberFlex installations.</p></div>
+                    <div class="pull-quote">"If you're pressing 125mm Pro 16, this is the only tool that gives you peace of mind."</div>
+                    <div class="pricing-pill">Available for Hire</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#8</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">FlexDetect® Sensor Cable</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Proactive Leak Detection ★</div>
+                    <p>Integrated directly into the PUR insulation during manufacturing, these copper/nordic wires interface with standard monitoring panels to pinpoint moisture intrusion to the exact meter.</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">Nordic system compatible</div>
+                        <div class="feature-item">Exact fault location</div>
+                        <div class="feature-item">Factory integrated</div>
+                        <div class="feature-item">Prevents catastrophic loss</div>
+                    </div>
+                    <div class="pros-cons">
+                        <div class="pros-block"><h4>Pros</h4><ul><li>Catches minor outer-casing damage before it degrades the insulation foam.</li></ul></div>
+                        <div class="cons-block"><h4>Cons</h4><ul><li>Requires careful wire-joining during installation to maintain loop continuity.</li></ul></div>
+                    </div>
+                    <div class="callout blue"><h4>Why It Wins</h4><p>Data is power. FlexDetect turns a dumb pipe into a smart asset, drastically reducing maintenance downtime.</p></div>
+                    <div class="pull-quote">"We know about a backhoe scraping a pipe before the operator even realizes he hit it."</div>
+                    <div class="pricing-pill">Included in Spec</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#9</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">HeatFlex (Standard PEX)</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Domestic Branch Connections ★</div>
+                    <p>When stepping down from the primary FiberFlex mains to individual house connections (below 95°C and 6 Bar), the unreinforced HeatFlex provides extreme flexibility for tight urban routing.</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">Ultimate flexibility</div>
+                        <div class="feature-item">Twin pipe configurations</div>
+                        <div class="feature-item">0.021 W/mK conductivity</div>
+                        <div class="feature-item">Cost-effective routing</div>
+                    </div>
+                    <div class="pros-cons">
+                        <div class="pros-block"><h4>Pros</h4><ul><li>Navigates around existing urban utilities with ease.</li></ul></div>
+                        <div class="cons-block"><h4>Cons</h4><ul><li>Not suitable for the primary transmission network.</li></ul></div>
+                    </div>
+                    <div class="callout blue"><h4>Why It Wins</h4><p>It is the perfect complementary product to FiberFlex, handling the "last mile" delivery to the end user.</p></div>
+                    <div class="pull-quote">"We run FiberFlex down the street, and branch off with HeatFlex into the homes. It's the perfect hybrid system."</div>
+                    <div class="pricing-pill">Project Specific Pricing</div>
+                </article>
+
+                <article class="tool-card">
+                    <div class="card-header">
+                        <div class="rank-badge">#10</div>
+                        <h3><a href="https://www.rkinfra.com/en/products/flex" target="_blank" rel="noopener">PEX Sanitary</a></h3>
+                    </div>
+                    <div class="best-for">★ Best for Potable Hot Water Transit ★</div>
+                    <p>Utilizing an SDR 7.4 pipe series, this pre-insulated flexible system is specifically certified for high-pressure sanitary and potable hot water applications (PN10 at 80°C).</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">SDR 7.4 wall thickness</div>
+                        <div class="feature-item">Potable water certified</div>
+                        <div class="feature-item">Legionella safe temperatures</div>
+                        <div class="feature-item">Highly insulated</div>
+                    </div>
+                    <div class="pros-cons">
+                        <div class="pros-block"><h4>Pros</h4><ul><li>Safely transports domestic hot water between buildings on hospital or hotel campuses.</li></ul></div>
+                        <div class="cons-block"><h4>Cons</h4><ul><li>Lower temperature threshold than the heating-specific pipes.</li></ul></div>
+                    </div>
+                    <div class="callout blue"><h4>Why It Wins</h4><p>Compliance. It meets all stringent health codes for potable water transit while retaining the installation benefits of district heating pipes.</p></div>
+                    <div class="pull-quote">"For campus-wide shower facilities, PEX Sanitary is the only system we trust."</div>
+                    <div class="pricing-pill">Project Specific Pricing</div>
+                </article>
+
+            </section>
+
+            <section id="video-2">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5U7z0Z4f62Y" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">A detailed look at the compression jointing process for aramid-reinforced pipes. Precision is non-negotiable.</div>
+            </section>
+
+            <section id="strategy-guide" class="strategy-section">
+                <h2>The FiberFlex Deployment Strategy</h2>
+                <p style="margin-bottom: 2rem;">Replacing rigid steel with flexible aramid requires a shift in civil engineering methodology. Follow these phases to ensure a flawless rollout.</p>
